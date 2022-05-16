@@ -39,3 +39,14 @@
 |其他| vue我又忘得差不多了|要学的有点多|有点兴趣，electron听起来很诱人|好奇|electron+1|electron+1，vue+1|
 
 
+# 大佬说
+
+要在obs里用，就考虑下面三：
+- [Tsuk1ko/bilibili-live-chat](https://github.com/Tsuk1ko/bilibili-live-chat)： 应该最合适
+- [BanqiJane/BiliLiveChat](https://github.com/BanqiJane/BiliLiveChat)：能用
+- [3Shain/Comen](https://github.com/3Shain/Comen)：以后可以参考
+
+# 下一步做
+
+- vue 复健
+
