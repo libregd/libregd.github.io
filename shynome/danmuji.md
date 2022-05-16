@@ -28,14 +28,14 @@
 因此对比环境，能考虑得就是：JavaScript，typescript，vue，react，考虑到技术栈，会偏react一点。
 
 |名称|[Tsuk1ko/bilibili-live-chat](https://github.com/Tsuk1ko/bilibili-live-chat)|[3Shain/Comen](https://github.com/3Shain/Comen)|[Beats0/bilive-danmaku](https://github.com/Beats0/bilive-danmaku)|[BanqiJane/BiliLiveChat](https://github.com/BanqiJane/BiliLiveChat)|[Sothis-baka/danmuji](https://github.com/Sothis-baka/danmuji)|[xiaobai2017666/danmuji](https://github.com/xiaobai2017666/danmuji)|
-|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|
 |实现原理|仿 YouTube Live Chat |鼓励扩展新平台|没看出来借鉴得啥|JQ还能干这个？|看package.json好少，基本就是原生搞的|没看出来|
 |生产环境可用性|yarn就行|npm+nx，前后端都得有|yarn |有种不感相信的可行性|npm|npm|
 |功能|比较简单|花样多，主要是多平台|面板功能和官方很像|简单|简单|最有产品思维的一个
 |兼容性|没后端，直接web用|主要是给懂开箱的人用的|electron跨平台|index.html 打开就行|electron|electron|
 |性能|[感觉还可以](https://blc.lolicon.app/)|理论上应该还行，毕竟分了前后端|[看着不错](https://www.bilibili.com/video/av328551804)|[看着有点慢](https://banqijane.github.io/BiliLiveChat/)|[看着还行](https://www.bilibili.com/video/BV1Xq4y1S7co/)| 看着还可以|
-|可维护性|vue3 + JavaScript|Angular 8+Nestjs+ typescript|electron+react+typescript|jQeury|electron+react+JavaScript|electron+vue+JavaScript
-|缺陷以及隐患|些许简陋|活跃开发中|请求太多会被ban|对jQuery属于又怕又爱，典型的太好用导致烂大街需要不停的筛选教程。|有些bug| 作者不会再更新的样子
+|可维护性|vue3 + JavaScript|Angular 8+Nestjs+ typescript|electron+react+typescript|jQeury|electron+react+JavaScript|electron+vue+JavaScript|
+|缺陷以及隐患|些许简陋|活跃开发中|请求太多会被ban|对jQuery属于又怕又爱，典型的太好用导致烂大街需要不停的筛选教程。|有些bug| 作者不会再更新的样子|
 |其他| vue我又忘得差不多了|要学的有点多|有点兴趣，electron听起来很诱人|好奇|electron+1|electron+1，vue+1|
 
 
