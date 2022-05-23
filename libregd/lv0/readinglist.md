@@ -28,8 +28,9 @@
 - [ ]  [React Architecture Patterns for Your Projects](https://blog.openreplay.com/react-architecture-patterns-for-your-projects)
 - [ ] [5 React Architecture Best Practices for 2022](https://www.sitepoint.com/react-architecture-best-practices/)
 - [ ]  [Lessons Learned from Building a React Component Library with TypeScript](https://www.vidyasource.com/blog/lessons-learned-react-component-library-typescript)
-- [ ] [Why Frameworks matter](robinwieruch.de/why-frameworks-matter/)
-- 对比了同一个功能实现在纯 js 和 react 里分别怎么做的
+- [X] [Why Frameworks matter](https://www.robinwieruch.de/why-frameworks-matter/)
+- 对比了同一个功能实现在纯 js 和 react 里分别怎么做的,用的hackernews的search resluts by keywords 举例。
+- 跟练实践后写的文章：[为什么需要用react？](why_freamworks_matter.md)
 - [ ] [How to CSS Style in React](https://www.robinwieruch.de/react-css-styling/)
 - css
 - [ ] [React css-in-js](https://juejin.cn/post/6935245880568053791)
