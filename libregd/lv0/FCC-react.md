@@ -7,6 +7,7 @@
 - 重在扩展新内容和加深认识，不是跟完就行了。
 
 # 知识点
+感觉fcc的知识属于一次只讲一个点，真的很好，教程典范。
 ## 从JSX 讨论为什么需要React这样的东西？
 
 除了FCC的小挑战，对于这个章节可以考虑做的挑战有：[官方JSX知识点挑战](https://beta.reactjs.org/learn/your-first-component#challenges)
@@ -23,5 +24,6 @@ original JavaScript → JavaScript in framework →  typescript in framework
 - JSX必须包裹在一个节点内，节点内想怎么塞都行。
 - JSX 内可以嵌套JavaScript使其生成内容
 
-对此我写了一篇用React的必然性：[为什么需要用react？](why_freamworks_matter.md)可以更深刻的感到react的好。
+对此我写了一篇用React(框架)的必然性：[为什么需要用react？](./why-freamworks-matter.md)可以更深刻的感到react的好。
 
+## 
