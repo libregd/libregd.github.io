@@ -89,7 +89,7 @@ jQuery 是 纯JavaScript到 framwork之间的过渡产物，但是这个产物�
 
 这个问题不止react，套在别的框架工具生态系统等等问题上都是可以问上一问的。
 
-因此学习react的过程，把vanilla JavaScript 和 react放在一起对比看是很有用的，准确的说法是用这种对比的办法写同一个应用，[这篇文章就是一个例子](./why_freamworks_matter.md)
+因此学习react的过程，把vanilla JavaScript 和 react放在一起对比看是很有用的，准确的说法是用这种对比的办法写同一个应用，[这篇文章就是一个例子](./why-freamworks-matter.md)
 
 以及后续你需要学习vue angular 等等别的，你都可以考虑对比同一个应用用不同的 生态/框架 / 工具  实现，有什么异同，这方便你了解特性，知道啥时候该用什么。
 
