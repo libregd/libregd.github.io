@@ -575,13 +575,27 @@ class MyComponent extends React.Component {
 
 # FCC实战
 并不打算按着fcc的要求做，也就是提交项目，但是人家实现的效果是不错的。发散一下做做看是不错的。
+[Project lists](https://www.freecodecamp.org/learn/front-end-development-libraries/#front-end-development-libraries-projects)
 
 ## 构建一个随机引语生成器
-- [具体要求](https://chinese.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine)
 - [参考]( https://codepen.io/freeCodeCamp/full/qRZeGZ )
-- todo
-- [ ] 实现按btn就出现新的一条内容和作者
+
+- [X] 实现按btn就出现新的一条内容和作者
 - [ ] 实现推特转发？
 - [ ] 颜色算主题，有个黑白切换就行。
+- [API](https://github.com/lukePeavey/quotable#get-random-quote)
+- [实现地址](https://libregd.github.io/profilo/practices)
+## 构建一个 Markdown 文件预览器
 
+- [参考](https://codepen.io/freeCodeCamp/full/GrZVVO)
+
+- [X] 无需自己实现markdown的解析[MARKED](https://cdnjs.com/libraries/marked)
+- [ ] CSS 美化完整
+- [ ] syntax highlight
+- 用的另一个[react-markdown](https://github.com/remarkjs/react-markdown#plugins)
+- [实现地址](https://libregd.github.io/profilo/practices)
+- 语法高亮：[react-syntax-highlighter](https://github.com/remarkjs/react-markdown)
+
+
+## 
 
