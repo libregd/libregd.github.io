@@ -578,6 +578,11 @@ class MyComponent extends React.Component {
 [Project lists](https://www.freecodecamp.org/learn/front-end-development-libraries/#front-end-development-libraries-projects)
 
 ## 构建一个随机引语生成器
+
+还蛮有趣，名人名言。中外相通，都是些那种“对你说的话”，“大概率押韵的话”，然后一般都有点正能量，所以感觉本学渣每天看上几句还挺好。
+
+api有个超时问题，感觉需要多学习一下网络知识。
+
 - [参考]( https://codepen.io/freeCodeCamp/full/qRZeGZ )
 
 - [X] 实现按btn就出现新的一条内容和作者
@@ -586,6 +591,8 @@ class MyComponent extends React.Component {
 - [API](https://github.com/lukePeavey/quotable#get-random-quote)
 - [实现地址](https://libregd.github.io/profilo/practices)
 ## 构建一个 Markdown 文件预览器
+
+感觉这年头无论是厂子还是自己搞，从零实现比较傻
 
 - [参考](https://codepen.io/freeCodeCamp/full/GrZVVO)
 
@@ -597,5 +604,12 @@ class MyComponent extends React.Component {
 - 语法高亮：[react-syntax-highlighter](https://github.com/remarkjs/react-markdown)
 
 
-## 
+## 实现一个打鼓器
+比较有趣，主要考察键盘和鼠标的事件监听，可以的话魔改一下。
+- [参考](https://codepen.io/freeCodeCamp/full/MJyNMd)
+- [钢琴mp3 src](https://github.com/fuhton/piano-mp3)
+- [关键词piano react + 类型 typescript + 最近更新，可以抄的还挺多](https://github.com/search?l=TypeScript&o=desc&q=Piano+react&s=updated&type=Repositories)
+## 实现一个计算器
+不是很想做。
+- [参考](https://codepen.io/freeCodeCamp/full/wgGVVX)
 
