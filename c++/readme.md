@@ -6,3 +6,5 @@
 
 [OI Wiki](https://oi-wiki.org/lang/)
 
+[信息学奥赛一本通](https://github.com/QiaoRuoZhuo/noipCode)
+
