@@ -1,0 +1,27 @@
+.container {
+    margin: 60px;
+    padding: 20px;
+    background-color: rgb(248, 253, 252);
+    
+    border: #eaeaea 2px solid;
+    border-radius: 10px;
+}
+.floated {
+    display: grid;
+    display: -ms-inline-grid;
+    grid-template-columns: repeat(auto-fill, 188px);
+    gap: 20px 20px;
+
+}
+.picture-box {
+    margin: 0 auto;
+
+}
+.picture-box > img{
+    max-height: 188px;
+    max-width: 188px;
+    display: block;
+}
+.picture-box>img:hover {
+    box-shadow: 7px 10px 16px #eaeaea;
+}
