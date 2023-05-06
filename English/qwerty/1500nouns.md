@@ -129,30 +129,30 @@
 | addition       | Addition is the act or process of adding something to something else. |
 | apartment      | An apartment is a self-contained living space within a larger building,  typically rented out to tenants. |
 | education      | Education is the process of acquiring knowledge, skills, values, and  attitudes through various forms of learning. |
-| math           | Income is the money a person or organization earns through work or  investments. |
-| moment         | Marriage is a legally recognized union between two people, typically  involving commitment, companionship, and mutual support. |
-| painting       | A user is a person or entity that utilizes a particular product or  service. |
-| politics       | A combination is a mixture or blend of two or more things or people. |
-| attention      | Failure is the lack of success in achieving a desired goal or objective. |
-| decision       | Meaning is the significance or purpose behind something or someone. |
-| event          | Medicine is the science and practice of diagnosing, treating, and  preventing illness or injury. |
-| property       | Philosophy is the study of fundamental questions about existence,  reality, knowledge, values, reason, and ethics. |
-| shopping       | A teacher is a person who instructs or educates others, typically in a  school or academic setting. |
-| student        | Communication is the exchange of information or ideas between people or  groups. |
-| wood           | Night is the period of darkness between sunset and sunrise.  |
-| competition    | Chemistry is the scientific study of the properties, composition, and  behavior of matter. |
-| distribution   | A disease is a disorder of the body or mind that causes specific symptoms  or affects certain organs or systems. |
-| entertainment  | A disk is a flat, circular object or storage device that can store or  read digital information. |
-| office         | Energy is the ability to do work, produce light or heat, or cause  movement. |
-| population     | A nation is a large group of people who share a common language, culture,  history, or government. |
-| president      | A road is a paved or unpaved pathway used for transportation, typically  by vehicles or pedestrians. |
-| unit           | A role is the function or position someone or something plays in a  particular situation or setting. |
-| category       | Soup is a liquid dish typically made by boiling vegetables, meat, or fish  in water or stock. |
-| cigarette      | Advertising is the practice of promoting or selling products or services  through various media channels. |
-| context        | A location is a specific place or position in space, typically with a  physical address or geographical coordinates. |
-| introduction   | Success is the achievement of a desired goal or objective.   |
-| opportunity    | Addition is the act or process of adding something to something else. |
-| performance    | An apartment is a self-contained living space within a larger building,  typically rented out to tenants. |
+| math           | A subject that deals with numbers, quantities, and shapes through various operations and formulas. |
+| moment         | A brief period of time that has significance or importance. |
+| painting       | An artistic creation made using paint on a surface, typically to convey an image or idea. |
+| politics       | The activities associated with governing a country or area, including decision-making and the formulation of laws and policies. |
+| attention      | The act of focusing one's mental faculties on a particular object, task, or person. |
+| decision       | The act of making a choice or coming to a conclusion after considering options and information. |
+| event          | Something that happens, especially something notable or significant. |
+| property       | A thing or things that someone owns, typically a physical object or piece of land. |
+| shopping       | The activity of browsing and purchasing goods, typically in a retail store or online. |
+| student        | A person who is studying or attending an educational institution. |
+| wood           | A hard fibrous material that makes up the stems and branches of trees, used for building, fuel, and various other purposes.  |
+| competition    | A contest between individuals or groups to determine a winner, typically in a sport or game. |
+| distribution   | The act of sharing or delivering something to various people or places. |
+| entertainment  | Activities or performances that provide amusement or enjoyment for an audience. |
+| office         | A place where administrative or professional work is done, typically in a building with rooms for offices and meeting spaces. |
+| population     | The group of individuals living in a particular area or region. |
+| president      | The elected or appointed head of a country or organization. |
+| unit           | A single entity or component of a larger group or system. |
+| category       | A class or division of things that share common characteristics or features. |
+| cigarette      | A small roll of finely cut tobacco wrapped in paper, typically smoked. |
+| context        | The circumstances or conditions in which something occurs or exists, influencing the meaning or interpretation of it. |
+| introduction   | The act of presenting or making something known to others for the first time.   |
+| opportunity    | A chance or possibility for advancement or progress. |
+| performance    | The act of carrying out a task, duty, or function, often in a public setting such as a theater or sports arena. |
 | driver         | A driver is a person who operates a vehicle or transportation device,  often for commercial or personal purposes. |
 | flight         | A flight is a journey made by air, typically in an airplane or other  aircraft. |
 | length         | Length is the measurement of the extent or dimension of something,  typically referring to its longest side or distance. |
