@@ -4,7 +4,7 @@
 
 
 
-<img src=".\pics\step-0.png" alt="test-1" style="zoom:100%;" />
+<img src="./pics/step-0.png" alt="test-1" style="zoom:100%;" />
 
 
 
@@ -21,8 +21,8 @@
 
 |                  | step 1                                                       | step 2                                                       |
 | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 过程             | <img src=".\pics\step-1.png" alt="test_00001_" style="zoom:50%;" /> |                                                              |
-| 输出             | <img src=".\pics\step-1-1.png" alt="ComfyUI_00006_" style="zoom:50%;" /> | <img src=".\pics\step-2-1.png" alt="ComfyUI_00007_" style="zoom:50%;" /> |
+| 过程             | <img src="./pics/step-1.png" alt="test_00001_" style="zoom:50%;" /> |                                                              |
+| 输出             | <img src="./pics/step-1-1.png" alt="ComfyUI_00006_" style="zoom:50%;" /> | <img src="./pics/step-2-1.png" alt="ComfyUI_00007_" style="zoom:50%;" /> |
 | 关键词           | American propaganda poster, chiaroscuro, close-up, high quality |                                                              |
 | 节点树           | 04，MIDAS-D深度 T2i                                          |                                                              |
 | controlNet加载器 | 深度-t2iadapter_depth-fp16.safetensors                       | 线-t2iadapter_canny-fp16.safetensors                         |
@@ -33,13 +33,13 @@
 | ————————————     | 这里开始只记录变化的条目                                     | ————————————————                                             |
 |                  |                                                              |                                                              |
 |                  | **step 3**                                                   | **step 4**                                                   |
-| 过程             | <img src=".\pics\step-3.png" alt="test_00003_" style="zoom:50%;" /> | ![test_00004_](.\pics\step-4.png)                            |
-| 输出             | <img src=".\pics\step-3-1.png" alt="ComfyUI_00010_" style="zoom:50%;" /> | ![ComfyUI_00011_](.\pics\step-4-1.png)                       |
+| 过程             | <img src="./pics/step-3.png" alt="test_00003_" style="zoom:50%;" /> | ![test_00004_](./pics/step-4.png)                            |
+| 输出             | <img src="./pics/step-3-1.png" alt="ComfyUI_00010_" style="zoom:50%;" /> | ![ComfyUI_00011_](./pics/step-4-1.png)                       |
 | 节点树           | 04，线-CANNY细线_T2                                          | 04，法向-BAE-Normal+Normal_V1.1                              |
 | 补充             | 整个节点数的替换会导致节点中模块的变化，等于一键模板。       | 因此只会替换掉ckpt，vae，关键词这类内容以便和之前的一样。<br />没有在原图上追加节点块是因为，看不过来，一不小心就搞错了。 |
 | **小结**         | 很神奇的是，100%的人眼其实能知道怎么提取这个过程线稿，但是AI做不到，→输出也因此乱来，可以看到填充试图去平涂，但是没做到。 | 目前来看，step1的输出是比较符合想象的：明显的美式线条，配色，但是细节又对不上，可以理解成景深去掉了细节。 |
 |                  | **step 5**                                                   | **step 6**                                                   |
-| 输出             | ![ComfyUI_00012_](.\pics\step-5.png)                         | ![ComfyUI_00013_](.\pics\step-6.png)                         |
+| 输出             | ![ComfyUI_00012_](./pics/step-5.png)                         | ![ComfyUI_00013_](./pics/step-6.png)                         |
 | 节点树           | 02，基础+自定VAE                                             |                                                              |
 | 关键词           |                                                              | Axial view, cuboid, ring surround, pipe, gold coin, composite convex edge, American propaganda poster, chiaroscuro, close-up, high quality |
 | **小结**         | amazed，这个模式输入图像就是白模图，输出就开始毫无关系了。   | 很明显，没有contrl net的图生图，可以说是缝合怪，哈哈哈哈。<br />因为在有明确的输入图像的时候，并不能完成指定的风格迁移，只会从关键词中选取，做最简单的重心贴上去。 |
@@ -60,9 +60,9 @@
 
 |          | **step3-1**                                                  | **step3-2**                                                  |
 | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 输入     | ![test-3](.\pics\Nstep-3-1.png)                              | <img src=".\pics\step-0.png" alt="test-1" style="zoom:100%;" /> |
-| 过程     | ![test_00006_](.\pics\Nstep-3-1-1.png)                       | ![test-4](.\pics\Nstep-3-2-1.png)                            |
-| 输出     | ![ComfyUI_00014_](.\pics\Nstep-3-1-2.png)                    | ![ComfyUI_00015_](.\pics\Nstep-3-2-2.png)                    |
+| 输入     | ![test-3](./pics/Nstep-3-1.png)                              | <img src="./pics/step-0.png" alt="test-1" style="zoom:100%;" /> |
+| 过程     | ![test_00006_](./pics/Nstep-3-1-1.png)                       | ![test-4](./pics/Nstep-3-2-1.png)                            |
+| 输出     | ![ComfyUI_00014_](./pics/Nstep-3-1-2.png)                    | ![ComfyUI_00015_](./pics/Nstep-3-2-2.png)                    |
 | 节点树   | 04，线-CANNY细线_T2                                          |                                                              |
 | 补充     | 在step3的基础上，考虑贴入更好的线稿,看看能出啥，大小还是512来讨论 | 变化就是把过程线稿替换成自己手工处理的（还得靠抠图软件），采样比较尊重本篇开头的那章图，因为似乎是用了这样的办法来叠到。 |
 | **小结** | 可以看到，线稿还是起了很大的作用，线稿表达不清楚的话，AI一叶障目的施工中，是无法知道什么时候该停下来作为停工点的。 | 原图其实提供了怎么处理光影和块面细节的思路，然后线稿很干净（省略了一些，毕竟补得好苦。 |
@@ -102,31 +102,31 @@ AI绘画对越抽象的页面结构越无法处理，输入图是非常简单，
 
 本次测试总的来说还是比较随意也简单，并没有说针对技术上深挖，而是作为工具考察能否确切的当好一个干活助手，你选了什么样的ckpt，对结果应该是影响蛮大的。以下基于step3-2的设定：
 
-|                    | **step3-3**                                                  | **step3-4**                                                  |
-| ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 输出               | ![ComfyUI_00016_](.\pics\Nstep-3-3.png)                      | ![ComfyUI_00017_](.\pics\Nstep-3-4.png) |
-| controlNet加载器   | comicBabes_v1.safetensors                                    | revAnimated_v122.safetensors                                 |
-| **吐槽**           | 笑死我了                                                     | 鼻环纹身，这么老美                                           |
-|                    | **step3-5**                                                  | **step3-6**                                                  |
-| 输出               | ![ComfyUI_00018_](.\pics\Nstep-3-5.png)                      | ![ComfyUI_00019_](.\pics\Nstep-3-6.png) |
-| controlNet加载器   | fantasyWorld_v1.safetensors                                  | allInOnePixelModel__1.ckpt                                   |
-| **吐槽**           | 黑皮诱惑                                                     | 这个又没有人了，说明啥？                                     |
-|                    |                                                              |                                                              |
-|                    | **step3-7**                                                  | **step3-8**                                                  |
-| 输出               | ![ComfyUI_00021_](.\pics\Nstep-3-7.png)                      | ![ComfyUI_00022_](.\pics\Nstep-3-8.png)                      |
-| controlNet加载器   | brainime_v10.safetensors                                     | GuoFeng3.2_f16.safetensors                                   |
-| CLIP文本编码（反） | 清空了                                                       |                                                              |
-| **吐槽**           | 没清空也走了一遍差不多，看来人出现并不是负面的作用           | 其实观察一下很多固定处理还挺有趣的                           |
-|                    | **step3-9**                                                  | **step3-10**                                                 |
-| 输出               | ![ComfyUI_00023_](.\pics\Nstep-3-9.png)                      | ![ComfyUI_00024_](.\pics\Nstep-3-10.png) |
-| controlNet加载器   | IconMODEV10_v10.safetensors                                  |                                                              |
-| CLIP文本编码（正） | American propaganda poster, chiaroscuro, close-up, high quality | chiaroscuro, close-up, high quality                          |
-| **吐槽**           | 这个模型作者说专门拿来做那种游戏icon的，感觉看到了游戏道具。 | 取消美式复古，立马改成素描。                                 |
-|                    | **step3-11**                                                 | **step3-12**                                                 |
-| 输出               | ![ComfyUI_00025_](.\pics\Nstep-3-11.png) | ![ComfyUI_00026_](.\pics\Nstep-3-12.png) |
-| controlNet加载器   | nigi3d_v20.safetensors                                       | neurocontrastdream_v10.safetensors                           |
-| CLIP文本编码（正） | chiaroscuro, close-up, high quality                          |                                                              |
-| **吐槽**           | 没想到表现这么糟，因为这个模型基本都是3D人物，没想到3D殆尽，作为一个原图是3D渲染图的导入来说 | 最后一个了，乏了。                                           |
+|                    | **step3-3**                                                  | **step3-4**                              |
+| ------------------ | ------------------------------------------------------------ | ---------------------------------------- |
+| 输出               | ![ComfyUI_00016_](./pics/Nstep-3-3.png)                      | ![ComfyUI_00017_](./pics/Nstep-3-4.png)  |
+| controlNet加载器   | comicBabes_v1.safetensors                                    | revAnimated_v122.safetensors             |
+| **吐槽**           | 笑死我了                                                     | 鼻环纹身，这么老美                       |
+|                    | **step3-5**                                                  | **step3-6**                              |
+| 输出               | ![ComfyUI_00018_](./pics/Nstep-3-5.png)                      | ![ComfyUI_00019_](./pics/Nstep-3-6.png)  |
+| controlNet加载器   | fantasyWorld_v1.safetensors                                  | allInOnePixelModel__1.ckpt               |
+| **吐槽**           | 黑皮诱惑                                                     | 这个又没有人了，说明啥？                 |
+|                    |                                                              |                                          |
+|                    | **step3-7**                                                  | **step3-8**                              |
+| 输出               | ![ComfyUI_00021_](./pics/Nstep-3-7.png)                      | ![ComfyUI_00022_](./pics/Nstep-3-8.png)  |
+| controlNet加载器   | brainime_v10.safetensors                                     | GuoFeng3.2_f16.safetensors               |
+| CLIP文本编码（反） | 清空了                                                       |                                          |
+| **吐槽**           | 没清空也走了一遍差不多，看来人出现并不是负面的作用           | 其实观察一下很多固定处理还挺有趣的       |
+|                    | **step3-9**                                                  | **step3-10**                             |
+| 输出               | ![ComfyUI_00023_](./pics/Nstep-3-9.png)                      | ![ComfyUI_00024_](./pics/Nstep-3-10.png) |
+| controlNet加载器   | IconMODEV10_v10.safetensors                                  |                                          |
+| CLIP文本编码（正） | American propaganda poster, chiaroscuro, close-up, high quality | chiaroscuro, close-up, high quality      |
+| **吐槽**           | 这个模型作者说专门拿来做那种游戏icon的，感觉看到了游戏道具。 | 取消美式复古，立马改成素描。             |
+|                    | **step3-11**                                                 | **step3-12**                             |
+| 输出               | ![ComfyUI_00025_](./pics/Nstep-3-11.png)                     | ![ComfyUI_00026_](./pics/Nstep-3-12.png) |
+| controlNet加载器   | nigi3d_v20.safetensors                                       | neurocontrastdream_v10.safetensors       |
+| CLIP文本编码（正） | chiaroscuro, close-up, high quality                          |                                          |
+| **吐槽**           | 没想到表现这么糟，因为这个模型基本都是3D人物，没想到3D殆尽，作为一个原图是3D渲染图的导入来说 | 最后一个了，乏了。                       |
 
 ## 总结
 
