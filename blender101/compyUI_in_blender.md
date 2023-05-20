@@ -104,11 +104,11 @@ AI绘画对越抽象的页面结构越无法处理，输入图是非常简单，
 
 |                    | **step3-3**                                                  | **step3-4**                                                  |
 | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 输出               | ![ComfyUI_00016_](.\pics\Nstep-3-3.png)                      | ![ComfyUI_00017_](D:\lucy\gihubdown\libregd.github.io\blender101\pics\Nstep-3-4.png) |
+| 输出               | ![ComfyUI_00016_](.\pics\Nstep-3-3.png)                      | ![ComfyUI_00017_](.\pics\Nstep-3-4.png) |
 | controlNet加载器   | comicBabes_v1.safetensors                                    | revAnimated_v122.safetensors                                 |
 | **吐槽**           | 笑死我了                                                     | 鼻环纹身，这么老美                                           |
 |                    | **step3-5**                                                  | **step3-6**                                                  |
-| 输出               | ![ComfyUI_00018_](.\pics\Nstep-3-5.png)                      | ![ComfyUI_00019_](D:\lucy\gihubdown\libregd.github.io\blender101\pics\Nstep-3-6.png) |
+| 输出               | ![ComfyUI_00018_](.\pics\Nstep-3-5.png)                      | ![ComfyUI_00019_](.\pics\Nstep-3-6.png) |
 | controlNet加载器   | fantasyWorld_v1.safetensors                                  | allInOnePixelModel__1.ckpt                                   |
 | **吐槽**           | 黑皮诱惑                                                     | 这个又没有人了，说明啥？                                     |
 |                    |                                                              |                                                              |
@@ -118,12 +118,12 @@ AI绘画对越抽象的页面结构越无法处理，输入图是非常简单，
 | CLIP文本编码（反） | 清空了                                                       |                                                              |
 | **吐槽**           | 没清空也走了一遍差不多，看来人出现并不是负面的作用           | 其实观察一下很多固定处理还挺有趣的                           |
 |                    | **step3-9**                                                  | **step3-10**                                                 |
-| 输出               | ![ComfyUI_00023_](.\pics\Nstep-3-9.png)                      | ![ComfyUI_00024_](D:\lucy\gihubdown\libregd.github.io\blender101\pics\Nstep-3-10.png) |
+| 输出               | ![ComfyUI_00023_](.\pics\Nstep-3-9.png)                      | ![ComfyUI_00024_](.\pics\Nstep-3-10.png) |
 | controlNet加载器   | IconMODEV10_v10.safetensors                                  |                                                              |
 | CLIP文本编码（正） | American propaganda poster, chiaroscuro, close-up, high quality | chiaroscuro, close-up, high quality                          |
 | **吐槽**           | 这个模型作者说专门拿来做那种游戏icon的，感觉看到了游戏道具。 | 取消美式复古，立马改成素描。                                 |
 |                    | **step3-11**                                                 | **step3-12**                                                 |
-| 输出               | ![ComfyUI_00025_](D:\lucy\gihubdown\libregd.github.io\blender101\pics\Nstep-3-11.png) | ![ComfyUI_00026_](D:\lucy\gihubdown\libregd.github.io\blender101\pics\Nstep-3-12.png) |
+| 输出               | ![ComfyUI_00025_](.\pics\Nstep-3-11.png) | ![ComfyUI_00026_](.\pics\Nstep-3-12.png) |
 | controlNet加载器   | nigi3d_v20.safetensors                                       | neurocontrastdream_v10.safetensors                           |
 | CLIP文本编码（正） | chiaroscuro, close-up, high quality                          |                                                              |
 | **吐槽**           | 没想到表现这么糟，因为这个模型基本都是3D人物，没想到3D殆尽，作为一个原图是3D渲染图的导入来说 | 最后一个了，乏了。                                           |
