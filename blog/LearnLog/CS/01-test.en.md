@@ -5,5 +5,5 @@ desc: "some desc"
 ---
 
 # English
-
+英文的post 不用写 banner路径吗？
 English post
