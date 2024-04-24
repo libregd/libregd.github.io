@@ -23,6 +23,7 @@
 		"bootstrap": "^5.3.3",
 		"bootstrap-icons": "^1.11.3",
 		"front-matter": "^4.0.2",
+		"github-markdown-css": "^5.5.1",
 		"glob": "^10.3.10",
 		"highlight.js": "^11.9.0",
 		"hono": "^4.2.4",

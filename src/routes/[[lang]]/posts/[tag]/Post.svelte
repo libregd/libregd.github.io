@@ -44,7 +44,7 @@
 		{/if}
 	</div>
 	<div class="collapse" id="post-{post.path}" bind:this={btn}>
-		<div class="card-body border-top">
+		<div class="card-body border-top markdown-body">
 			{@html post.content}
 		</div>
 	</div>
