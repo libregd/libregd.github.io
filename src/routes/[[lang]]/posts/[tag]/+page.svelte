@@ -15,3 +15,11 @@
 		{/each}
 	</div>
 {/if}
+
+<style>
+	.container {
+		max-width:960px;
+		min-width:450px;
+	}
+
+</style>

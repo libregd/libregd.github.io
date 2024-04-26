@@ -23,7 +23,7 @@
 
 <div class="card rounded-4">
 	<a href={post.path} class="d-none">{post.attributes.title}</a>
-	<img src={banner} width="960" height="204" alt="" class="card-img-top" />
+
 	<div class="card-body">
 		<h4 class="card-title">
 			{post.attributes.title}
@@ -32,7 +32,7 @@
 			<div class="row row-cols-auto g-2">
 				{#each tags as tag}
 					<div class="col">
-						<button class="btn rounded-5 btn-light" disabled>{tag}</button>
+						<button class="btn btn-sm rounded-5 btn-light" disabled>{tag}</button>
 					</div>
 				{/each}
 			</div>
@@ -78,5 +78,11 @@
 	}
 	.card-body :global(img) {
 		max-width: 100%;
+	}
+	.card-body {
+		padding:2em;
+	}
+	.card-text {
+		margin-top:10px;
 	}
 </style>
