@@ -16,7 +16,12 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter(),
 		prerender: {
-			entries: ['/sitemap.xml', '/data/posts.json', '/en/'],
+			entries: [
+				'/sitemap.xml',
+				'/data/posts.json',
+				'/en/',
+				'/posts/placeholder/placeholder/placeholder.txt',
+			],
 			handleHttpError: 'warn',
 		},
 	},
