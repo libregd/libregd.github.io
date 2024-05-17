@@ -9,10 +9,10 @@ export async function load({ fetch, params, parent, route, url }) {
 	for (let post of posts) {
 		if (post.path === path) {
 			const content = md.render(post.body, { path: post.path })
+			// @ts-ignore
 			const { subnavs = [] } = await parent()
 			return {
-				post,
-				content,
+				post: { ...post, content: content },
 				subnavs: [
 					...subnavs,
 					{
