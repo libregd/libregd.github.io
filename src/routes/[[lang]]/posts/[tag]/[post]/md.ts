@@ -5,7 +5,7 @@ import linkReplacer from 'markdown-it-replace-link'
 export const fakeHost = 'http://fakeHost'
 
 export const replaceLink = (link: string, env: { path: string }) => {
-	if (!link.startsWith('./')) {
+	if (link.startsWith('http')) {
 		return link
 	}
 	const u = new URL(link, fakeHost + env.path + '/')
