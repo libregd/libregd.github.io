@@ -8,7 +8,7 @@
 	<NotFound></NotFound>
 {:else}
 	<div class="container my-5">
-		{#each data.posts as post}
+		{#each data.posts as post (post.path)}
 			<div class="my-4">
 				<Post {post}></Post>
 			</div>
@@ -18,8 +18,7 @@
 
 <style>
 	.container {
-		max-width:960px;
-		min-width:450px;
+		max-width: 960px;
+		min-width: 450px;
 	}
-
 </style>
