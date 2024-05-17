@@ -1,6 +1,8 @@
 import MarkdownIt from 'markdown-it'
 import hljs from 'highlight.js'
 import linkReplacer from 'markdown-it-replace-link'
+import anchor from 'markdown-it-anchor'
+import toc from 'markdown-it-toc-done-right'
 
 export const fakeHost = 'http://fakeHost'
 
@@ -14,6 +16,7 @@ export const replaceLink = (link: string, env: { path: string }) => {
 
 // @ts-ignore
 export const md = MarkdownIt({
+	// @ts-ignore
 	highlight(str, lang) {
 		if (lang && hljs.getLanguage(lang)) {
 			try {
@@ -29,3 +32,6 @@ export const md = MarkdownIt({
 })
 	// @ts-ignore
 	.use(linkReplacer, { replaceLink: replaceLink })
+	.use(anchor)
+	// @ts-ignore
+	.use(toc)
