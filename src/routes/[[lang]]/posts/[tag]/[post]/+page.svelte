@@ -7,7 +7,9 @@
 </script>
 
 <div class="container my-5">
-	<Post {post} show article></Post>
+	{#key post.path}
+		<Post {post} show article></Post>
+	{/key}
 </div>
 
 <style>
