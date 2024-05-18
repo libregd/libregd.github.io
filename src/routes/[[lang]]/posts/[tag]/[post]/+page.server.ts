@@ -8,7 +8,7 @@ export async function load({ fetch, params, parent, route, url }) {
 	const path = resolveRoute(route.id, params)
 	for (let post of posts) {
 		if (post.path === path) {
-			const content = md.render('[[_toc_]]\n' + post.body, { path: post.path })
+			const content = md.render('[[_toc_]]\n' + post.body, { path: post.path, id: post.id })
 			// @ts-ignore
 			const { subnavs = [] } = await parent()
 			return {
