@@ -20,6 +20,7 @@
 		})
 	})
 	$: banner = post.attributes?.banner ?? Placeholder
+	import { toc } from './toc'
 </script>
 
 <div class="card rounded-4">
@@ -45,7 +46,7 @@
 		{/if}
 	</div>
 	<div class="collapse" class:show id="post-{post.path}" bind:this={btn}>
-		<div class="card-body border-top markdown-body">
+		<div class="card-body border-top markdown-body" use:toc>
 			{@html post.content}
 		</div>
 	</div>
@@ -87,5 +88,17 @@
 	}
 	.card-text {
 		margin-top: 10px;
+	}
+	.card :global(.table-of-contents) {
+		position: fixed;
+		top: 6rem;
+		right: calc(50% + 1rem);
+		z-index: 9;
+		box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+		margin-bottom: 0;
+		width: 240px;
+		max-height: 90vh;
+		overflow-y: auto;
+		overflow-x: hidden;
 	}
 </style>

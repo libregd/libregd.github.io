@@ -14,7 +14,7 @@ export async function load({ fetch, params }) {
 		posts: posts.map<Post & { content: string }>((post) => {
 			return {
 				...post,
-				content: md.render(post.body, { path: post.path }),
+				content: md.render('[[_toc_]]\n' + post.body, { path: post.path }),
 			}
 		}),
 	}

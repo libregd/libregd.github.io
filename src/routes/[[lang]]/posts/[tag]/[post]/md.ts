@@ -34,4 +34,6 @@ export const md = MarkdownIt({
 	.use(linkReplacer, { replaceLink: replaceLink })
 	.use(anchor)
 	// @ts-ignore
-	.use(toc)
+	.use(toc, {
+		containerClass: 'table-of-contents bg-body rounded-4 py-2 d-none d-xxl-block',
+	})

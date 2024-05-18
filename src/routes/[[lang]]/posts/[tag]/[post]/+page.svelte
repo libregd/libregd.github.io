@@ -9,3 +9,10 @@
 <div class="container my-5">
 	<Post {post} show article></Post>
 </div>
+
+<style>
+	.container {
+		max-width: 960px;
+		min-width: 450px;
+	}
+</style>
