@@ -7,10 +7,10 @@
 {#if !data.posts.length}
 	<NotFound></NotFound>
 {:else}
-	<div class="container my-5">
-		{#each data.posts as post}
+	<div class="container my-5" id="posts">
+		{#each data.posts as post (post.path)}
 			<div class="my-4">
-				<Post {post}></Post>
+				<Post {post} parent="#posts"></Post>
 			</div>
 		{/each}
 	</div>
@@ -18,8 +18,7 @@
 
 <style>
 	.container {
-		max-width:960px;
-		min-width:450px;
+		max-width: 960px;
+		min-width: 450px;
 	}
-
 </style>

@@ -23,6 +23,7 @@ export interface Post extends FrontMatterResult<Attributes> {
 	created: Date
 	updated: Date
 	path: string
+	id: number
 }
 
 export async function GET() {
@@ -64,11 +65,15 @@ export async function GET() {
 			return r
 		})
 	let posts = await Promise.all(postsTasks)
-	// posts = posts.sort((a, b) => {
-	// 	let n1 = getDate(a.path)
-	// 	let n2 = getDate(b.path)
-	// 	return n1 > n2 ? -1 : 1
-	// })
+	posts = posts.sort((a, b) => {
+		// let n1 = getDate(a.path)
+		// let n2 = getDate(b.path)
+		return a.created.getTime() > b.created.getTime() ? -1 : 1
+	})
+	posts = posts.map((a, index) => {
+		a.id = index
+		return a
+	})
 	const resp = JSON.stringify(posts, null, 2)
 	return new Response(resp, {
 		headers: {

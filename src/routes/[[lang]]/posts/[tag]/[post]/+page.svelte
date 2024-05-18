@@ -3,23 +3,16 @@
 	export let data
 	$: post = data.post
 	$: tags = post.attributes.tags.filter((t) => !t.startsWith('c_'))
+	import Post from '../Post.svelte'
 </script>
 
-<div class="container">
-	<h1>{post.attributes.title}</h1>
-	<div>
-		{#each tags as tag}
-			<button class="btn btn-sm btn-outline-secondary me-2">{tag}</button>
-		{/each}
-	</div>
-	<hr />
-	<div>
-		{@html data.content}
-	</div>
-	<div>
-		<small>
-			创建时间: {post.created}<br />
-			修改时间: {post.updated}
-		</small>
-	</div>
+<div class="container my-5">
+	<Post {post} show article></Post>
 </div>
+
+<style>
+	.container {
+		max-width: 960px;
+		min-width: 450px;
+	}
+</style>
