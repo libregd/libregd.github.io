@@ -21,6 +21,7 @@
 	})
 	$: banner = post.attributes?.banner ?? Placeholder
 	import { toc } from './toc'
+	export let parent: string = ''
 </script>
 
 <div class="card rounded-4">
@@ -45,7 +46,7 @@
 			</p>
 		{/if}
 	</div>
-	<div class="collapse" class:show id="post-{post.path}" bind:this={btn}>
+	<div class="collapse" class:show id="post-{post.path}" bind:this={btn} data-bs-parent={parent}>
 		<div class="card-body border-top markdown-body" use:toc>
 			{@html post.content}
 		</div>
