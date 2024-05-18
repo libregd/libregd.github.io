@@ -42,7 +42,7 @@ export const md = MarkdownIt({
 	})
 	// @ts-ignore
 	.use(toc, {
-		containerClass: 'table-of-contents bg-body rounded-4 pt-2 d-none d-xxl-block',
+		containerClass: 'table-of-contents bg-body rounded-4 pt-2 d-none',
 		// slugify: (s: string) => {
 		// 	return '55_' + encodeURIComponent(String(s).trim().toLowerCase().replace(/\s+/g, '-'))
 		// },

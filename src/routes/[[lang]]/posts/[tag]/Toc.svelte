@@ -22,6 +22,7 @@
 		if (!table.classList.contains('table-of-contents')) {
 			return
 		}
+		table.classList.add('d-xxl-block')
 		const card = table.parentNode!.parentNode!.parentNode as HTMLElement
 		if (isPosts) {
 			target = (card.querySelector('a.card-footer') as HTMLLinkElement).href
