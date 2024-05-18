@@ -97,8 +97,5 @@
 		box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 		margin-bottom: 0;
 		width: 240px;
-		max-height: 90vh;
-		overflow-y: auto;
-		overflow-x: hidden;
 	}
 </style>

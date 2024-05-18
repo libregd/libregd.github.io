@@ -14,17 +14,21 @@
 	export let items: Item[]
 	import { slide } from 'svelte/transition'
 	let self: HTMLElement
+	let target: string
 	onMount(() => {
 		const table = self.parentNode as HTMLElement
 		if (!table.classList.contains('table-of-contents')) {
 			return
 		}
 		const card = table.parentNode!.parentNode!.parentNode as HTMLElement
+		target = (card.querySelector('a.card-footer') as HTMLLinkElement).href
 		table.style.marginRight = `${card.clientWidth / 2}px`
 	})
+	export let lv = 0
+	import { page } from '$app/stores'
 </script>
 
-<ol class="ol p-0 m-1 pt-1 mt-0" bind:this={self}>
+<ol class="ol p-0 m-1 pt-1 mt-0" bind:this={self} class:root={lv === 0}>
 	{#each items as item}
 		<li>
 			{#if !item.sub}
@@ -56,13 +60,18 @@
 				</div>
 				{#if open}
 					<div transition:slide class="sub">
-						<svelte:self items={item.sub}></svelte:self>
+						<svelte:self items={item.sub} lv={lv + 1}></svelte:self>
 					</div>
 				{/if}
 			{/if}
 		</li>
 	{/each}
 </ol>
+{#if lv === 0 && $page.route.id === '/[[lang]]/posts/[tag]'}
+	<a class="d-block text-center border-top py-2" href={target} data-bs-toggle="collapse">
+		收起全文
+	</a>
+{/if}
 
 <style>
 	.ol {
@@ -78,5 +87,10 @@
 		max-width: 90%;
 		overflow: hidden;
 		text-overflow: ellipsis;
+	}
+	ol.root {
+		max-height: calc(90vh - 50px - 2rem);
+		overflow-y: auto;
+		overflow-x: hidden;
 	}
 </style>
