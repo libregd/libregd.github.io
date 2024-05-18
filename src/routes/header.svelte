@@ -120,6 +120,9 @@
 		z-index: 1;
 		box-shadow: 0px 2px 8px #0000001a;
 	}
+	:global(html) {
+		scroll-padding-top: 7rem;
+	}
 	.nav {
 		gap: 0;
 	}
