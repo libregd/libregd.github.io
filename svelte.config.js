@@ -23,6 +23,7 @@ const config = {
 				'/posts/placeholder/placeholder/placeholder.txt',
 			],
 			handleHttpError: 'warn',
+			handleMissingId: 'warn',
 		},
 	},
 }
