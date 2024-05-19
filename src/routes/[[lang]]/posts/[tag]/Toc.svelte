@@ -22,6 +22,7 @@
 		if (!table.classList.contains('table-of-contents')) {
 			return
 		}
+		table.classList.add('d-xxl-block')
 		const card = table.parentNode!.parentNode!.parentNode as HTMLElement
 		if (isPosts) {
 			target = (card.querySelector('a.card-footer') as HTMLLinkElement).href
@@ -29,6 +30,7 @@
 		table.style.marginRight = `${card.clientWidth / 2}px`
 	})
 	export let lv = 0
+	import { t } from '$lib/translations'
 </script>
 
 <ol class="ol p-0 m-1 pt-1 mt-0" bind:this={self} class:root={lv === 0} class:posts={isPosts}>
@@ -72,7 +74,7 @@
 </ol>
 {#if lv === 0 && isPosts}
 	<a class="d-block text-center border-top py-2" href={target} data-bs-toggle="collapse">
-		收起全文
+		{$t('common.collapse_artcile')}
 	</a>
 {/if}
 
