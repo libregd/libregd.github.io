@@ -22,7 +22,7 @@
 			</div>
 			<div class="col">
 				<a
-					href="https://github.com/libregd"
+					href="https://x.com/libregd60294"
 					target="twitter"
 					class="btn btn-sm"
 					use:tooltip
